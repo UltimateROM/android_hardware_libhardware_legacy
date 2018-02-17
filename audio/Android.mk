@@ -29,11 +29,11 @@ ifeq ($(AUDIO_POLICY_TEST),true)
 endif
 
 LOCAL_STATIC_LIBRARIES := libmedia_helper
-LOCAL_MODULE := libaudiopolicy_legacy
-LOCAL_MODULE_TAGS := optional
-LOCAL_CFLAGS += -Wno-unused-parameter
+#LOCAL_MODULE := libaudiopolicy_legacy
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_CFLAGS += -Wno-unused-parameter
 
-include $(BUILD_STATIC_LIBRARY)
+#include $(BUILD_STATIC_LIBRARY)
 
 # The default audio policy, for now still implemented on top of legacy
 # policy code
@@ -58,7 +58,7 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS := -Wno-unused-parameter
 
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
 
 #ifeq ($(ENABLE_AUDIO_DUMP),true)
 #  LOCAL_SRC_FILES += AudioDumpInterface.cpp
