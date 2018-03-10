@@ -70,6 +70,7 @@ static int sendit(int timeout_ms)
 
 #endif
 
+#if 0
 int vibrator_on(int timeout_ms)
 {
     /* constant on, up to maximum allowed time */
@@ -80,3 +81,4 @@ int vibrator_off()
 {
     return sendit(0);
 }
+#endif
